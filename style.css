@@ -1,0 +1,101 @@
+html {
+    background-color: hsl(275, 100%, 97%);
+}
+
+body {
+    display: flex;
+    background: repeat-x url(./img/background-pattern-desktop.svg);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li p {
+    grid-column: span 2;
+}
+
+.question {
+    grid-column: span 2;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Work Sans";
+    color: hsl(292, 42%, 14%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+h1::before {
+    content: "";
+    height: 40px;
+    width: 41px;
+    background: url(./img/icon-star.svg);
+    position: absolute;
+    left: -10px;
+    top: 4px;
+}
+
+h2 {
+    font-family: "Work Sans";
+    color: hsl(292, 42%, 14%);
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: rgb(165, 22, 165);
+}
+
+p {
+    font-family: "Work Sans";
+    color: hsl(292, 16%, 49%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+span {
+    grid-column: span 2;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(291, 17%, 92%);
+    margin-top: 20px;
+}
